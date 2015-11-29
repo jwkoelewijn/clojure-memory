@@ -1,4 +1,5 @@
 (ns memory.system
+  (:gen-class)
   (:require [org.httpkit.server :refer [run-server]]
             [com.stuartsierra.component :as component]
             [memory.web :refer [app]]))
