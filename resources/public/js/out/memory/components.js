@@ -18,38 +18,38 @@ return e.preventDefault();
  * 
  */
 memory.components.Line = quiescent.core.component.call(null,(function (tiles,reveal_ch){
-return cljs.core.apply.call(null,quiescent.dom.div,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),"line"], null),cljs.core.map.call(null,(function (p1__19202_SHARP_){
-return memory.components.Cell.call(null,p1__19202_SHARP_,reveal_ch);
+return cljs.core.apply.call(null,quiescent.dom.div,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),"line"], null),cljs.core.map.call(null,(function (p1__16790_SHARP_){
+return memory.components.Cell.call(null,p1__16790_SHARP_,reveal_ch);
 }),tiles));
 }),cljs.core.PersistentArrayMap.EMPTY);
 /**
  * 
  */
 memory.components.Board = quiescent.core.component.call(null,(function (tiles,reveal_ch){
-return cljs.core.apply.call(null,quiescent.dom.div,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),"board clearfix"], null),cljs.core.map.call(null,(function (p1__19203_SHARP_){
-return memory.components.Line.call(null,p1__19203_SHARP_,reveal_ch);
+return cljs.core.apply.call(null,quiescent.dom.div,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),"board clearfix"], null),cljs.core.map.call(null,(function (p1__16791_SHARP_){
+return memory.components.Line.call(null,p1__16791_SHARP_,reveal_ch);
 }),cljs.core.partition.call(null,(4),tiles)));
 }),cljs.core.PersistentArrayMap.EMPTY);
 /**
  * 
  */
-memory.components.Timer = quiescent.core.component.call(null,(function (p__19205){
-var map__19206 = p__19205;
-var map__19206__$1 = ((((!((map__19206 == null)))?((((map__19206.cljs$lang$protocol_mask$partition0$ & (64))) || (map__19206.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__19206):map__19206);
-var index = cljs.core.get.call(null,map__19206__$1,new cljs.core.Keyword(null,"index","index",-1531685915));
-var sand = cljs.core.get.call(null,map__19206__$1,new cljs.core.Keyword(null,"sand","sand",1204438373));
-return cljs.core.apply.call(null,quiescent.dom.div,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),[cljs.core.str("timer timer-"),cljs.core.str(index)].join('')], null),cljs.core.map.call(null,((function (map__19206,map__19206__$1,index,sand){
-return (function (p1__19204_SHARP_){
-return quiescent.dom.div.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),[cljs.core.str("sand "),cljs.core.str(cljs.core.name.call(null,p1__19204_SHARP_))].join('')], null));
-});})(map__19206,map__19206__$1,index,sand))
+memory.components.Timer = quiescent.core.component.call(null,(function (p__16793){
+var map__16794 = p__16793;
+var map__16794__$1 = ((((!((map__16794 == null)))?((((map__16794.cljs$lang$protocol_mask$partition0$ & (64))) || (map__16794.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__16794):map__16794);
+var index = cljs.core.get.call(null,map__16794__$1,new cljs.core.Keyword(null,"index","index",-1531685915));
+var sand = cljs.core.get.call(null,map__16794__$1,new cljs.core.Keyword(null,"sand","sand",1204438373));
+return cljs.core.apply.call(null,quiescent.dom.div,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),[cljs.core.str("timer timer-"),cljs.core.str(index)].join('')], null),cljs.core.map.call(null,((function (map__16794,map__16794__$1,index,sand){
+return (function (p1__16792_SHARP_){
+return quiescent.dom.div.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"className","className",-1983287057),[cljs.core.str("sand "),cljs.core.str(cljs.core.name.call(null,p1__16792_SHARP_))].join('')], null));
+});})(map__16794,map__16794__$1,index,sand))
 ,sand));
 }),cljs.core.PersistentArrayMap.EMPTY);
 /**
  * 
  */
 memory.components.Timers = quiescent.core.component.call(null,(function (sand){
-return cljs.core.apply.call(null,quiescent.dom.div,cljs.core.PersistentArrayMap.EMPTY,cljs.core.map_indexed.call(null,(function (p1__19208_SHARP_,p2__19209_SHARP_){
-return memory.components.Timer.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"index","index",-1531685915),p1__19208_SHARP_,new cljs.core.Keyword(null,"sand","sand",1204438373),p2__19209_SHARP_], null));
+return cljs.core.apply.call(null,quiescent.dom.div,cljs.core.PersistentArrayMap.EMPTY,cljs.core.map_indexed.call(null,(function (p1__16796_SHARP_,p2__16797_SHARP_){
+return memory.components.Timer.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"index","index",-1531685915),p1__16796_SHARP_,new cljs.core.Keyword(null,"sand","sand",1204438373),p2__16797_SHARP_], null));
 }),cljs.core.partition.call(null,(30),sand)));
 }),cljs.core.PersistentArrayMap.EMPTY);
 /**
