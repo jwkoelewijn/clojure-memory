@@ -28,23 +28,23 @@
 .sand.remaining {
   opacity: 1;
   box-shadow: inset 0px 1px 0px 0px #bee2f9;
-  background: -webkit-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
-  background:    -moz-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
-  border: 1px solid #3866a3;
+  background: -webkit-linear-gradient(top, #63b8ee 5%, #85c2f1 100%);
+  background:    -moz-linear-gradient(top, #63b8ee 5%, #85c2f1 100%);
+  border: 1px solid #2969b0;
 }
 
 .sand.zombie {
   border: 1px solid #000;
-  background: -webkit-linear-gradient(top, #63ee63 5%, #46cf46 100%);
-  background:    -moz-linear-gradient(top, #63ee63 5%, #46cf46 100%);
+  background: -webkit-linear-gradient(top, #d46434 5%, #fd793f 100%);
+  background:    -moz-linear-gradient(top, #d46434 5%, #fd793f 100%);
   opacity: 0.3;
 }
 
 .board {
-  border: 10px solid #a49e96;
+  border: 10px solid #c6c6c6;
   border-radius: 10px;
   margin: 20px;
-  background: #938d85;
+  background: #858585;
 }
 
 .cell {
@@ -85,7 +85,7 @@
 }
 
 .front {
-  background: #ccc;
+  background: #c6c6c6;
 }
 
 .front:hover {
@@ -105,7 +105,7 @@
 }
 
 .back {
-  background: url(zombie-tiles.jpg);
+  background: url(bauke-tiles.jpg);
   background-size: 1600px;
   background-position: 300px 100px;
 }

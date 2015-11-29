@@ -1,10 +1,10 @@
 body {
-  background: #b5afa7;
+  background: #f8f8f9;
   background-size: 380px;
 }
 
 body.interlude {
-  background-color: #000;
+  background-color: #f8f8f9;
 }
 
 .narrative {
@@ -12,7 +12,7 @@ body.interlude {
   width: 800px;
   padding-top: 200px;
   font-size: 35px;
-  color: #999;
+  color: #2969b0;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@ body.interlude {
 }
 
 .narrative a {
-  color: red;
+  color: #fd793f;
 }
 
 #main {
@@ -66,14 +66,14 @@ body.interlude {
 }
 
 .watermark.flash-red {
-  background-color: red;
+  background-color: #fd793f;
   -webkit-transition: none;
   -moz-transition: none;
 }
 
 .game-over .watermark {
   z-index: 1;
-  background-color: red;
+  background-color: #fd793f;
 }
 
 .game-over #eaten {

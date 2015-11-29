@@ -1,18 +1,16 @@
 (ns memory.web
   (:require [chord.http-kit :refer [with-channel]]
-            [clojure.core.async :refer [go <! >!]]
             [compojure.core :refer [defroutes GET]]
+            [clojure.java.io :as io]
             [compojure.route :refer [resources]]
-            [memory.game :refer [create-game reveal-tile prep]]))
+            [memory.game-loop :refer [start-game-loop]]))
+
 
 (defn ws-handler [req]
   (with-channel req ws-channel ;;ws-channel is automatically bound by the with-channel macro
-    (go
-      (loop [game (create-game)]
-        (>! ws-channel (prep game))
-        (when-let [tile-index (:message (<! ws-channel))]
-          (recur (reveal-tile game tile-index)))))))
+    (start-game-loop ws-channel)))
 
 (defroutes app
   (GET "/ws" [] ws-handler)
+  (GET "/" [] (slurp (io/resource "public/index.html")))
   (resources "/"))
