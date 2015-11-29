@@ -11,6 +11,7 @@
                  [quiescent "0.2.0-RC2"]
                  [expectations "2.1.2"]
                  [jarohen/chord "0.6.0"]]
+  :min-lein-version "2.0.0"
   :profiles {:uberjar {:aot :all}
              :dev {:plugins [[lein-cljsbuild "1.0.6"]
                              [lein-figwheel "0.3.7"]]
