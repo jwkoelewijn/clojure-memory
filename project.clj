@@ -12,17 +12,24 @@
                  [expectations "2.1.2"]
                  [jarohen/chord "0.6.0"]]
   :min-lein-version "2.0.0"
-  :profiles {:uberjar {:aot :all}
-             :dev {:plugins [[lein-cljsbuild "1.0.6"]
-                             [lein-figwheel "0.3.7"]]
+  :uberjar-name "memory.jar"
+  :jvm-opts ["-server"]
+  :plugins [[lein-cljsbuild "1.0.6"]
+            [lein-figwheel "0.3.7"]]
+  :hooks [leiningen.cljsbuild]
+  :profiles {:uberjar {:omit-source true
+                       :aot :all}
+             :dev {
                    :dependencies [[reloaded.repl "0.1.0"]]
                    :source-paths ["dev"]
-                   :cljsbuild {:builds [{:source-paths ["src" "dev"]
-                                         :figwheel true
-                                         :compiler {:output-to "target/classes/public/app.js"
-                                                    :output-dir "target/classes/public/out"
-                                                    :main "memory.client"
-                                                    :asset-path "/out"
-                                                    :optimizations :none
-                                                    :recompile-dependents true
-                                                    :source-map true}}]}}})
+                   }}
+  :cljsbuild {:builds [{:source-paths ["src"]
+                        :jar true
+                        :compiler {:output-to "resources/public/js/app.js"
+                                   :output-dir "resources/public/js/out"
+                                   :asset-path "js/out"
+                                   :main "memory.client"
+                                   :optimizations :none
+                                   :recompile-dependents true
+                                   :source-map "resources/public/js/sourcemap"
+                                }}]})
