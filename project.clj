@@ -11,7 +11,8 @@
                  [quiescent "0.2.0-RC2"]
                  [expectations "2.1.2"]
                  [jarohen/chord "0.6.0"]]
-  :profiles {:dev {:plugins [[lein-cljsbuild "1.0.6"]
+  :profiles {:uberjar {:aot :all}
+             :dev {:plugins [[lein-cljsbuild "1.0.6"]
                              [lein-figwheel "0.3.7"]]
                    :dependencies [[reloaded.repl "0.1.0"]]
                    :source-paths ["dev"]
