@@ -9,7 +9,7 @@
 
 (defonce run-once ;; this is to make sure we do not reconnect every reload when using figwheel
   (go
-    (let [{:keys [ws-channel error]} (<! (ws-ch "ws://bauke.herokuapp.com/ws"))]
+    (let [{:keys [ws-channel error]} (<! (ws-ch "wss://bauke.herokuapp.com/ws"))]
       (when error (throw error))
       (loop []
         (when-let [game (:message (<! ws-channel))]
