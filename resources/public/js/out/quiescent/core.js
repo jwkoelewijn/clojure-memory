@@ -11,24 +11,24 @@ quiescent.core._STAR_component_STAR_ = null;
  */
 quiescent.core.lifecycle_impls = (function (){var basic = (function (impl){
 return (function (){
-var this__19005__auto__ = this;
-var _STAR_component_STAR_21022 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this__19005__auto__;
+var this__19009__auto__ = this;
+var _STAR_component_STAR_21026 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this__19009__auto__;
 
 try{return cljs.core.apply.call(null,impl,quiescent.core._STAR_component_STAR_.getDOMNode(),quiescent.core._STAR_component_STAR_.props.value,quiescent.core._STAR_component_STAR_.props.constants);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21022;
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21026;
 }});
 });
 var with_old_value = ((function (basic){
 return (function (impl){
 return ((function (basic){
 return (function (prev_props,_){
-var this__19005__auto__ = this;
-var _STAR_component_STAR_21023 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this__19005__auto__;
+var this__19009__auto__ = this;
+var _STAR_component_STAR_21027 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this__19009__auto__;
 
 try{return cljs.core.apply.call(null,impl,quiescent.core._STAR_component_STAR_.getDOMNode(),quiescent.core._STAR_component_STAR_.props.value,prev_props.value,quiescent.core._STAR_component_STAR_.props.constants);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21023;
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21027;
 }});
 ;})(basic))
 });})(basic))
@@ -37,12 +37,12 @@ var with_nil_old_value = ((function (basic,with_old_value){
 return (function (impl){
 return ((function (basic,with_old_value){
 return (function (){
-var this__19005__auto__ = this;
-var _STAR_component_STAR_21024 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this__19005__auto__;
+var this__19009__auto__ = this;
+var _STAR_component_STAR_21028 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this__19009__auto__;
 
 try{return cljs.core.apply.call(null,impl,quiescent.core._STAR_component_STAR_.getDOMNode(),quiescent.core._STAR_component_STAR_.props.value,null,quiescent.core._STAR_component_STAR_.props.constants);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21024;
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21028;
 }});
 ;})(basic,with_old_value))
 });})(basic,with_old_value))
@@ -51,12 +51,12 @@ var with_callback = ((function (basic,with_old_value,with_nil_old_value){
 return (function (impl){
 return ((function (basic,with_old_value,with_nil_old_value){
 return (function (cb){
-var this__19005__auto__ = this;
-var _STAR_component_STAR_21025 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this__19005__auto__;
+var this__19009__auto__ = this;
+var _STAR_component_STAR_21029 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this__19009__auto__;
 
 try{return cljs.core.apply.call(null,impl,quiescent.core._STAR_component_STAR_.getDOMNode(),cb,quiescent.core._STAR_component_STAR_.props.value,quiescent.core._STAR_component_STAR_.props.constants);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21025;
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21029;
 }});
 ;})(basic,with_old_value,with_nil_old_value))
 });})(basic,with_old_value,with_nil_old_value))
@@ -66,36 +66,36 @@ return new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"on
 quiescent.core.build_lifecycle_impls = (function quiescent$core$build_lifecycle_impls(opts_map){
 return cljs.core.reduce.call(null,cljs.core.partial.call(null,cljs.core.merge_with,(function (_,___$1){
 throw "Component definition should not provide handlers for both :on-render and (:on-mount | :on-update).";
-})),cljs.core.map.call(null,(function (p__21036){
-var vec__21037 = p__21036;
-var key = cljs.core.nth.call(null,vec__21037,(0),null);
-var impl = cljs.core.nth.call(null,vec__21037,(1),null);
+})),cljs.core.map.call(null,(function (p__21040){
+var vec__21041 = p__21040;
+var key = cljs.core.nth.call(null,vec__21041,(0),null);
+var impl = cljs.core.nth.call(null,vec__21041,(1),null);
 var temp__4425__auto__ = quiescent.core.lifecycle_impls.call(null,key);
 if(cljs.core.truth_(temp__4425__auto__)){
 var impl_map = temp__4425__auto__;
-return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__15440__auto__ = ((function (impl_map,temp__4425__auto__,vec__21037,key,impl){
-return (function quiescent$core$build_lifecycle_impls_$_iter__21038(s__21039){
-return (new cljs.core.LazySeq(null,((function (impl_map,temp__4425__auto__,vec__21037,key,impl){
+return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__15444__auto__ = ((function (impl_map,temp__4425__auto__,vec__21041,key,impl){
+return (function quiescent$core$build_lifecycle_impls_$_iter__21042(s__21043){
+return (new cljs.core.LazySeq(null,((function (impl_map,temp__4425__auto__,vec__21041,key,impl){
 return (function (){
-var s__21039__$1 = s__21039;
+var s__21043__$1 = s__21043;
 while(true){
-var temp__4425__auto____$1 = cljs.core.seq.call(null,s__21039__$1);
+var temp__4425__auto____$1 = cljs.core.seq.call(null,s__21043__$1);
 if(temp__4425__auto____$1){
-var s__21039__$2 = temp__4425__auto____$1;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__21039__$2)){
-var c__15438__auto__ = cljs.core.chunk_first.call(null,s__21039__$2);
-var size__15439__auto__ = cljs.core.count.call(null,c__15438__auto__);
-var b__21041 = cljs.core.chunk_buffer.call(null,size__15439__auto__);
-if((function (){var i__21040 = (0);
+var s__21043__$2 = temp__4425__auto____$1;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__21043__$2)){
+var c__15442__auto__ = cljs.core.chunk_first.call(null,s__21043__$2);
+var size__15443__auto__ = cljs.core.count.call(null,c__15442__auto__);
+var b__21045 = cljs.core.chunk_buffer.call(null,size__15443__auto__);
+if((function (){var i__21044 = (0);
 while(true){
-if((i__21040 < size__15439__auto__)){
-var vec__21044 = cljs.core._nth.call(null,c__15438__auto__,i__21040);
-var method = cljs.core.nth.call(null,vec__21044,(0),null);
-var impl_ctor = cljs.core.nth.call(null,vec__21044,(1),null);
-cljs.core.chunk_append.call(null,b__21041,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [method,impl_ctor.call(null,impl)], null));
+if((i__21044 < size__15443__auto__)){
+var vec__21048 = cljs.core._nth.call(null,c__15442__auto__,i__21044);
+var method = cljs.core.nth.call(null,vec__21048,(0),null);
+var impl_ctor = cljs.core.nth.call(null,vec__21048,(1),null);
+cljs.core.chunk_append.call(null,b__21045,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [method,impl_ctor.call(null,impl)], null));
 
-var G__21046 = (i__21040 + (1));
-i__21040 = G__21046;
+var G__21050 = (i__21044 + (1));
+i__21044 = G__21050;
 continue;
 } else {
 return true;
@@ -103,26 +103,26 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__21041),quiescent$core$build_lifecycle_impls_$_iter__21038.call(null,cljs.core.chunk_rest.call(null,s__21039__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__21045),quiescent$core$build_lifecycle_impls_$_iter__21042.call(null,cljs.core.chunk_rest.call(null,s__21043__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__21041),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__21045),null);
 }
 } else {
-var vec__21045 = cljs.core.first.call(null,s__21039__$2);
-var method = cljs.core.nth.call(null,vec__21045,(0),null);
-var impl_ctor = cljs.core.nth.call(null,vec__21045,(1),null);
-return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [method,impl_ctor.call(null,impl)], null),quiescent$core$build_lifecycle_impls_$_iter__21038.call(null,cljs.core.rest.call(null,s__21039__$2)));
+var vec__21049 = cljs.core.first.call(null,s__21043__$2);
+var method = cljs.core.nth.call(null,vec__21049,(0),null);
+var impl_ctor = cljs.core.nth.call(null,vec__21049,(1),null);
+return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [method,impl_ctor.call(null,impl)], null),quiescent$core$build_lifecycle_impls_$_iter__21042.call(null,cljs.core.rest.call(null,s__21043__$2)));
 }
 } else {
 return null;
 }
 break;
 }
-});})(impl_map,temp__4425__auto__,vec__21037,key,impl))
+});})(impl_map,temp__4425__auto__,vec__21041,key,impl))
 ,null,null));
-});})(impl_map,temp__4425__auto__,vec__21037,key,impl))
+});})(impl_map,temp__4425__auto__,vec__21041,key,impl))
 ;
-return iter__15440__auto__.call(null,impl_map);
+return iter__15444__auto__.call(null,impl_map);
 })());
 } else {
 return null;
@@ -196,23 +196,23 @@ return null;
  *   of the render function and invocations of functions defined in the opts map.
  */
 quiescent.core.component = (function quiescent$core$component(var_args){
-var args21047 = [];
-var len__15726__auto___21054 = arguments.length;
-var i__15727__auto___21055 = (0);
+var args21051 = [];
+var len__15730__auto___21058 = arguments.length;
+var i__15731__auto___21059 = (0);
 while(true){
-if((i__15727__auto___21055 < len__15726__auto___21054)){
-args21047.push((arguments[i__15727__auto___21055]));
+if((i__15731__auto___21059 < len__15730__auto___21058)){
+args21051.push((arguments[i__15731__auto___21059]));
 
-var G__21056 = (i__15727__auto___21055 + (1));
-i__15727__auto___21055 = G__21056;
+var G__21060 = (i__15731__auto___21059 + (1));
+i__15731__auto___21059 = G__21060;
 continue;
 } else {
 }
 break;
 }
 
-var G__21049 = args21047.length;
-switch (G__21049) {
+var G__21053 = args21051.length;
+switch (G__21053) {
 case 1:
 return quiescent.core.component.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -222,7 +222,7 @@ return quiescent.core.component.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args21047.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args21051.length)].join('')));
 
 }
 });
@@ -233,54 +233,54 @@ return quiescent.core.component.call(null,renderer,cljs.core.PersistentArrayMap.
 
 quiescent.core.component.cljs$core$IFn$_invoke$arity$2 = (function (renderer,opts){
 var impl = cljs.core.merge.call(null,(cljs.core.truth_(new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(opts))?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"displayName","displayName",-809144601),new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(opts)], null):null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"shouldComponentUpdate","shouldComponentUpdate",1795750960),(function (next_props,_){
-var this__19005__auto__ = this;
-var _STAR_component_STAR_21050 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this__19005__auto__;
+var this__19009__auto__ = this;
+var _STAR_component_STAR_21054 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this__19009__auto__;
 
 try{return cljs.core.not_EQ_.call(null,quiescent.core._STAR_component_STAR_.props.value,next_props.value);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21050;
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21054;
 }}),new cljs.core.Keyword(null,"render","render",-1408033454),(function (){
-var this__19005__auto__ = this;
-var _STAR_component_STAR_21051 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this__19005__auto__;
+var this__19009__auto__ = this;
+var _STAR_component_STAR_21055 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this__19009__auto__;
 
 try{return cljs.core.apply.call(null,renderer,quiescent.core._STAR_component_STAR_.props.value,quiescent.core._STAR_component_STAR_.props.constants);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21051;
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21055;
 }})], null),quiescent.core.build_lifecycle_impls.call(null,opts));
 var react_component = React.createClass(cljs.core.clj__GT_js.call(null,impl));
 return ((function (impl,react_component){
 return (function() { 
-var G__21058__delegate = function (value,constant_args){
+var G__21062__delegate = function (value,constant_args){
 var props = {};
 props.value = value;
 
 props.constants = constant_args;
 
-var temp__4425__auto___21059 = new cljs.core.Keyword(null,"keyfn","keyfn",780060332).cljs$core$IFn$_invoke$arity$1(opts);
-if(cljs.core.truth_(temp__4425__auto___21059)){
-var keyfn_21060 = temp__4425__auto___21059;
-props.key = keyfn_21060.call(null,value);
+var temp__4425__auto___21063 = new cljs.core.Keyword(null,"keyfn","keyfn",780060332).cljs$core$IFn$_invoke$arity$1(opts);
+if(cljs.core.truth_(temp__4425__auto___21063)){
+var keyfn_21064 = temp__4425__auto___21063;
+props.key = keyfn_21064.call(null,value);
 } else {
 }
 
 return React.createElement(react_component,props);
 };
-var G__21058 = function (value,var_args){
+var G__21062 = function (value,var_args){
 var constant_args = null;
 if (arguments.length > 1) {
-var G__21061__i = 0, G__21061__a = new Array(arguments.length -  1);
-while (G__21061__i < G__21061__a.length) {G__21061__a[G__21061__i] = arguments[G__21061__i + 1]; ++G__21061__i;}
-  constant_args = new cljs.core.IndexedSeq(G__21061__a,0);
+var G__21065__i = 0, G__21065__a = new Array(arguments.length -  1);
+while (G__21065__i < G__21065__a.length) {G__21065__a[G__21065__i] = arguments[G__21065__i + 1]; ++G__21065__i;}
+  constant_args = new cljs.core.IndexedSeq(G__21065__a,0);
 } 
-return G__21058__delegate.call(this,value,constant_args);};
-G__21058.cljs$lang$maxFixedArity = 1;
-G__21058.cljs$lang$applyTo = (function (arglist__21062){
-var value = cljs.core.first(arglist__21062);
-var constant_args = cljs.core.rest(arglist__21062);
-return G__21058__delegate(value,constant_args);
+return G__21062__delegate.call(this,value,constant_args);};
+G__21062.cljs$lang$maxFixedArity = 1;
+G__21062.cljs$lang$applyTo = (function (arglist__21066){
+var value = cljs.core.first(arglist__21066);
+var constant_args = cljs.core.rest(arglist__21066);
+return G__21062__delegate(value,constant_args);
 });
-G__21058.cljs$core$IFn$_invoke$arity$variadic = G__21058__delegate;
-return G__21058;
+G__21062.cljs$core$IFn$_invoke$arity$variadic = G__21062__delegate;
+return G__21062;
 })()
 ;
 ;})(impl,react_component))
@@ -293,7 +293,7 @@ quiescent.core.component.cljs$lang$maxFixedArity = 2;
 quiescent.core.unmount = (function quiescent$core$unmount(node){
 return React.unmountComponentAtNode(node);
 });
-var factory_21063 = React.createFactory(React.addons.CSSTransitionGroup);
+var factory_21067 = React.createFactory(React.addons.CSSTransitionGroup);
 /**
  * Return a CSSTransitionGroup ReactElement, with the specified transition options and children.
  *  Options must contain at least a :transitionName key.
@@ -304,12 +304,12 @@ var factory_21063 = React.createFactory(React.addons.CSSTransitionGroup);
  *  See http://facebook.github.io/react/docs/animation.html for details on how CSSTransitionGroup
  *  works.
  */
-quiescent.core.CSSTransitionGroup = ((function (factory_21063){
+quiescent.core.CSSTransitionGroup = ((function (factory_21067){
 return (function quiescent$core$CSSTransitionGroup(opts,children){
-return factory_21063.call(null,cljs.core.clj__GT_js.call(null,cljs.core.assoc.call(null,opts,new cljs.core.Keyword(null,"children","children",-940561982),children)));
-});})(factory_21063))
+return factory_21067.call(null,cljs.core.clj__GT_js.call(null,cljs.core.assoc.call(null,opts,new cljs.core.Keyword(null,"children","children",-940561982),children)));
+});})(factory_21067))
 ;
-var factory_21064 = React.createFactory(React.addons.TransitionGroup);
+var factory_21068 = React.createFactory(React.addons.TransitionGroup);
 /**
  * Return a TransitionGroup ReactElement, with the specified properties and children.
  * 
@@ -319,10 +319,10 @@ var factory_21064 = React.createFactory(React.addons.TransitionGroup);
  *  See http://facebook.github.io/react/docs/animation.html for details on how TransitionGroup
  *  works.
  */
-quiescent.core.TransitionGroup = ((function (factory_21064){
+quiescent.core.TransitionGroup = ((function (factory_21068){
 return (function quiescent$core$TransitionGroup(props,children){
-return factory_21064.call(null,cljs.core.clj__GT_js.call(null,cljs.core.assoc.call(null,props,new cljs.core.Keyword(null,"children","children",-940561982),children)));
-});})(factory_21064))
+return factory_21068.call(null,cljs.core.clj__GT_js.call(null,cljs.core.assoc.call(null,props,new cljs.core.Keyword(null,"children","children",-940561982),children)));
+});})(factory_21068))
 ;
 /**
  * Wrapper component used to mix-in lifecycle access
@@ -335,58 +335,6 @@ var this$ = this;
 var temp__4425__auto__ = (this$.props["onUpdate"]);
 if(cljs.core.truth_(temp__4425__auto__)){
 var f = temp__4425__auto__;
-var _STAR_component_STAR_21065 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this$;
-
-try{return f.call(null,this$.getDOMNode());
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21065;
-}} else {
-return null;
-}
-}), "componentDidMount": (function (){
-var this$ = this;
-var temp__4425__auto__ = (this$.props["onMount"]);
-if(cljs.core.truth_(temp__4425__auto__)){
-var f = temp__4425__auto__;
-var _STAR_component_STAR_21066 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this$;
-
-try{return f.call(null,this$.getDOMNode());
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21066;
-}} else {
-return null;
-}
-}), "componentWillMount": (function (){
-var this$ = this;
-var temp__4425__auto__ = (this$.props["onWillMount"]);
-if(cljs.core.truth_(temp__4425__auto__)){
-var f = temp__4425__auto__;
-var _STAR_component_STAR_21067 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this$;
-
-try{return f.call(null);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21067;
-}} else {
-return null;
-}
-}), "componentWillUpdate": (function (_,___$1){
-var this$ = this;
-var temp__4425__auto__ = (this$.props["onWillUpdate"]);
-if(cljs.core.truth_(temp__4425__auto__)){
-var f = temp__4425__auto__;
-var _STAR_component_STAR_21068 = quiescent.core._STAR_component_STAR_;
-quiescent.core._STAR_component_STAR_ = this$;
-
-try{return f.call(null);
-}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21068;
-}} else {
-return null;
-}
-}), "componentWillUnmount": (function (){
-var this$ = this;
-var temp__4425__auto__ = (this$.props["onWillUnmount"]);
-if(cljs.core.truth_(temp__4425__auto__)){
-var f = temp__4425__auto__;
 var _STAR_component_STAR_21069 = quiescent.core._STAR_component_STAR_;
 quiescent.core._STAR_component_STAR_ = this$;
 
@@ -395,8 +343,60 @@ try{return f.call(null,this$.getDOMNode());
 }} else {
 return null;
 }
+}), "componentDidMount": (function (){
+var this$ = this;
+var temp__4425__auto__ = (this$.props["onMount"]);
+if(cljs.core.truth_(temp__4425__auto__)){
+var f = temp__4425__auto__;
+var _STAR_component_STAR_21070 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this$;
+
+try{return f.call(null,this$.getDOMNode());
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21070;
+}} else {
+return null;
+}
+}), "componentWillMount": (function (){
+var this$ = this;
+var temp__4425__auto__ = (this$.props["onWillMount"]);
+if(cljs.core.truth_(temp__4425__auto__)){
+var f = temp__4425__auto__;
+var _STAR_component_STAR_21071 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this$;
+
+try{return f.call(null);
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21071;
+}} else {
+return null;
+}
+}), "componentWillUpdate": (function (_,___$1){
+var this$ = this;
+var temp__4425__auto__ = (this$.props["onWillUpdate"]);
+if(cljs.core.truth_(temp__4425__auto__)){
+var f = temp__4425__auto__;
+var _STAR_component_STAR_21072 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this$;
+
+try{return f.call(null);
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21072;
+}} else {
+return null;
+}
+}), "componentWillUnmount": (function (){
+var this$ = this;
+var temp__4425__auto__ = (this$.props["onWillUnmount"]);
+if(cljs.core.truth_(temp__4425__auto__)){
+var f = temp__4425__auto__;
+var _STAR_component_STAR_21073 = quiescent.core._STAR_component_STAR_;
+quiescent.core._STAR_component_STAR_ = this$;
+
+try{return f.call(null,this$.getDOMNode());
+}finally {quiescent.core._STAR_component_STAR_ = _STAR_component_STAR_21073;
+}} else {
+return null;
+}
 })});
-var did_warn_21072 = cljs.core.atom.call(null,false);
+var did_warn_21076 = cljs.core.atom.call(null,false);
 /**
  * DEPRECATED. Wrappers do not work properly. Prefer adding lifecycle
  *  methods at component creation time.
@@ -415,57 +415,57 @@ var did_warn_21072 = cljs.core.atom.call(null,false);
  *  :onWillMount - will call the provided function with no arguments
  *  :onWillUnmount - will call the provided function with no arguments
  */
-quiescent.core.wrapper = ((function (did_warn_21072){
+quiescent.core.wrapper = ((function (did_warn_21076){
 return (function quiescent$core$wrapper(var_args){
-var args__15733__auto__ = [];
-var len__15726__auto___21073 = arguments.length;
-var i__15727__auto___21074 = (0);
+var args__15737__auto__ = [];
+var len__15730__auto___21077 = arguments.length;
+var i__15731__auto___21078 = (0);
 while(true){
-if((i__15727__auto___21074 < len__15726__auto___21073)){
-args__15733__auto__.push((arguments[i__15727__auto___21074]));
+if((i__15731__auto___21078 < len__15730__auto___21077)){
+args__15737__auto__.push((arguments[i__15731__auto___21078]));
 
-var G__21075 = (i__15727__auto___21074 + (1));
-i__15727__auto___21074 = G__21075;
+var G__21079 = (i__15731__auto___21078 + (1));
+i__15731__auto___21078 = G__21079;
 continue;
 } else {
 }
 break;
 }
 
-var argseq__15734__auto__ = ((((1) < args__15733__auto__.length))?(new cljs.core.IndexedSeq(args__15733__auto__.slice((1)),(0))):null);
-return quiescent.core.wrapper.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__15734__auto__);
-});})(did_warn_21072))
+var argseq__15738__auto__ = ((((1) < args__15737__auto__.length))?(new cljs.core.IndexedSeq(args__15737__auto__.slice((1)),(0))):null);
+return quiescent.core.wrapper.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__15738__auto__);
+});})(did_warn_21076))
 ;
 
-quiescent.core.wrapper.cljs$core$IFn$_invoke$arity$variadic = ((function (did_warn_21072){
+quiescent.core.wrapper.cljs$core$IFn$_invoke$arity$variadic = ((function (did_warn_21076){
 return (function (child,kvs){
-if(cljs.core.truth_(cljs.core.deref.call(null,did_warn_21072))){
+if(cljs.core.truth_(cljs.core.deref.call(null,did_warn_21076))){
 } else {
-cljs.core.reset_BANG_.call(null,did_warn_21072,true);
+cljs.core.reset_BANG_.call(null,did_warn_21076,true);
 
 console.log("WARNING: Quiescent's wrapping functionality is deprecated. Please see the\n      release notes for v0.2. Instead, define lifecycle hooks at component creation time.");
 }
 
 var props = cljs.core.clj__GT_js.call(null,cljs.core.apply.call(null,cljs.core.array_map,new cljs.core.Keyword(null,"wrappee","wrappee",876822573),child,kvs));
-var temp__4425__auto___21076 = (child.props["key"]);
-if(cljs.core.truth_(temp__4425__auto___21076)){
-var key_21077 = temp__4425__auto___21076;
-(props["key"] = key_21077);
+var temp__4425__auto___21080 = (child.props["key"]);
+if(cljs.core.truth_(temp__4425__auto___21080)){
+var key_21081 = temp__4425__auto___21080;
+(props["key"] = key_21081);
 } else {
 }
 
 return React.createElement(quiescent.core.WrapperComponent,props);
-});})(did_warn_21072))
+});})(did_warn_21076))
 ;
 
 quiescent.core.wrapper.cljs$lang$maxFixedArity = (1);
 
-quiescent.core.wrapper.cljs$lang$applyTo = ((function (did_warn_21072){
-return (function (seq21070){
-var G__21071 = cljs.core.first.call(null,seq21070);
-var seq21070__$1 = cljs.core.next.call(null,seq21070);
-return quiescent.core.wrapper.cljs$core$IFn$_invoke$arity$variadic(G__21071,seq21070__$1);
-});})(did_warn_21072))
+quiescent.core.wrapper.cljs$lang$applyTo = ((function (did_warn_21076){
+return (function (seq21074){
+var G__21075 = cljs.core.first.call(null,seq21074);
+var seq21074__$1 = cljs.core.next.call(null,seq21074);
+return quiescent.core.wrapper.cljs$core$IFn$_invoke$arity$variadic(G__21075,seq21074__$1);
+});})(did_warn_21076))
 ;
 /**
  * DEPRECATED. Wrappers do not work properly. Prefer adding lifecycle
