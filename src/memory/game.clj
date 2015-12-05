@@ -35,7 +35,7 @@
 
 (defn replace-remaining [sand replacement]
   (take (count sand)
-    (concat 
+    (concat
       (take-while (complement #{:remaining}) sand)
       replacement
       (->> (drop-while (complement #{:remaining}) sand)
@@ -128,9 +128,9 @@
 
 (defn find-face-index [game face]
   (first (keep-indexed (fn [index tile]
-                  (when (and (= face (:face tile))
-                             (not (:revealed? tile)))
-                    index))
+                        (when (and (= face (:face tile))
+                                   (not (:revealed? tile)))
+                          index))
                 (:tiles game))))
 
 (defn reveal-one [face game]
@@ -149,8 +149,8 @@
 (defn count-down-completion [game]
   (case (:complete-countdown game)
     nil game
-    1 (-> game 
-          (dissoc :complete-countdown) 
+    1 (-> game
+          (dissoc :complete-countdown)
           (dissoc :foggy?)
           (complete-round))
     (update game :complete-countdown dec)))
